@@ -2,16 +2,32 @@
   base = "/"
   publish = "/frontend/dist"
   command = "yarn install && cd frontend && yarn install && yarn build"
+  environment = "production"
 
 [build.environment]
   NODE_VERSION = "18"
-
-[build.environment]
   YARN_VERSION = "1.22.22"
+  NODE_ENV = "production"
 
 [context.production]
-  command = "yarn install && cd frontend && yarn install && yarn build"
+  base = "/"
   publish = "/frontend/dist"
+  command = "yarn install && cd frontend && yarn install && yarn build"
+  environment = "production"
 
 [context.production.environment]
   NODE_ENV = "production"
+  NODE_VERSION = "18"
+  YARN_VERSION = "1.22.22"
+
+[context.deploy-preview]
+  base = "/"
+  publish = "/frontend/dist"
+  command = "yarn install && cd frontend && yarn install && yarn build"
+  environment = "production"
+
+[context.branch-deploy]
+  base = "/"
+  publish = "/frontend/dist"
+  command = "yarn install && cd frontend && yarn install && yarn build"
+  environment = "production"
