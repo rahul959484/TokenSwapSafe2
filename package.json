@@ -1,0 +1,43 @@
+{
+  "name": "tokenswapsafe",
+  "version": "1.0.0",
+  "description": "A secure escrow smart contract for token swaps between parties",
+  "main": "index.js",
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "demo": "hardhat run scripts/demo.js",
+    "deploy": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network sepolia",
+    "node": "hardhat node",
+    "clean": "hardhat clean",
+    "copy-artifacts": "node scripts/copy-artifacts.js",
+    "build": "npm run compile && npm run copy-artifacts",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:install": "cd frontend && npm install",
+    "dev": "npm run build && npm run frontend:dev"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "smart-contract",
+    "escrow",
+    "tokens",
+    "swap"
+  ],
+  "author": "TokenSwapSafe Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "@openzeppelin/test-helpers": "^0.5.16",
+    "hardhat": "^2.19.0",
+    "chai": "^4.3.7",
+    "ethers": "^6.8.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+} 

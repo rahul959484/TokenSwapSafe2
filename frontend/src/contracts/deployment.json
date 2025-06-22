@@ -1,0 +1,14 @@
+{
+  "network": "localhost",
+  "timestamp": "2025-06-22T04:50:01.349Z",
+  "contracts": {
+    "TokenSwapEscrow": {
+      "address": "0x...",
+      "abi": "TokenSwapEscrow.json"
+    },
+    "MockERC20": {
+      "address": "0x...",
+      "abi": "MockERC20.json"
+    }
+  }
+}
