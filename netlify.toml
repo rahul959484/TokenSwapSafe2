@@ -1,7 +1,7 @@
 [build]
   base = "/"
   publish = "/frontend/dist"
-  command = "yarn install && cd frontend && yarn install && yarn build"
+  command = "yarn install && yarn add -D vite && cd frontend && yarn install && yarn build"
   environment = "production"
 
 [build.environment]
@@ -12,7 +12,7 @@
 [context.production]
   base = "/"
   publish = "/frontend/dist"
-  command = "yarn install && cd frontend && yarn install && yarn build"
+  command = "yarn install && yarn add -D vite && cd frontend && yarn install && yarn build"
   environment = "production"
 
 [context.production.environment]
@@ -23,11 +23,11 @@
 [context.deploy-preview]
   base = "/"
   publish = "/frontend/dist"
-  command = "yarn install && cd frontend && yarn install && yarn build"
+  command = "yarn install && yarn add -D vite && cd frontend && yarn install && yarn build"
   environment = "production"
 
 [context.branch-deploy]
   base = "/"
   publish = "/frontend/dist"
-  command = "yarn install && cd frontend && yarn install && yarn build"
+  command = "yarn install && yarn add -D vite && cd frontend && yarn install && yarn build"
   environment = "production"
